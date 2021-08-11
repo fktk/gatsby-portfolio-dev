@@ -9,9 +9,6 @@ const ContactForm = () => {
   const name_form_no = process.env.GATSBY_PORTFOLIO_NAME;
   const email_form_no = process.env.GATSBY_PORTFOLIO_EMAIL;
   const message_form_no = process.env.GATSBY_PORTFOLIO_MESSAGE;
-  console.log(name_form_no)
-  console.log(email_form_no)
-  console.log(message_form_no)
   return (
     <Formik
       initialValues={{
@@ -114,8 +111,7 @@ const ContactForm = () => {
             <InputField>
               <Center>
                 <h4>
-                  Your message has been successfully sent, I will get back to you
-                  ASAP!
+                  メッセージを送信しました。できるだけ早くお返事します。
                 </h4>
               </Center>
             </InputField>
