@@ -1,7 +1,6 @@
 import React, { useContext } from 'react';
-import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { ThemeContext } from 'providers/ThemeProvider';
-import { Container, Button } from 'components/common';
+import { Container } from 'components/common';
 import dev from 'assets/illustrations/skills.svg';
 import { Wrapper, SkillsWrapper, Details, Thumbnail } from './styles';
 
@@ -11,19 +10,21 @@ export const Skills = () => {
   return (
     <Wrapper id="about">
       <SkillsWrapper as={Container}>
-        <Thumbnail>
-          <img src={dev} alt="I’m John and I’m a Backend & Devops engineer!" />
-        </Thumbnail>
         <Details theme={theme}>
-          <h1>More about me</h1>
+          <h1>About me</h1>
           <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-            industry’s standard dummy.
+            長崎県出身の材料系技術者で一児の父。京都大学で材料工学を修了後、愛知県のメーカーに就職。現在は車載用電池の材料開発に尽力する。
           </p>
-          <Button as={AnchorLink} href="#contact">
-            Hire me
-          </Button>
+          <p>
+            ナノマテリアルの観察、成分分析をメイン技術として持つが、さらに第3次AIブームに乗って覚えたプログラミングを駆使し、データ処理の自動化、可視化、シミュレーション、AI活用など多様なソフトを自作できる。(が会社では活用できていない😥)
+          </p>
+          <p>
+            趣味はロードバイクをなでること。夢はヨットで世界一周。
+          </p>
         </Details>
+        <Thumbnail>
+          <img src={dev} alt="それらしい画像" />
+        </Thumbnail>
       </SkillsWrapper>
     </Wrapper>
   );

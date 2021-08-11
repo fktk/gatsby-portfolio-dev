@@ -21,7 +21,6 @@ export const SkillsWrapper = styled.div`
 
 export const Details = styled.div`
   flex: 1;
-  padding-left: 2rem;
 
   @media (max-width: 960px) {
     padding-left: unset;
@@ -29,7 +28,7 @@ export const Details = styled.div`
   }
 
   h1 {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     font-size: 26pt;
     color: ${({ theme }) => (theme === 'dark' ? '#fff' : '#212121')};
 
@@ -39,15 +38,12 @@ export const Details = styled.div`
   }
 
   p {
-    margin-bottom: 2.5rem;
-    font-size: 20pt;
+    margin-bottom: 0.5rem;
+    font-size: 12pt;
     font-weight: normal;
-    line-height: 1.3;
+    line-height: 1.6;
     color: ${({ theme }) => (theme === 'dark' ? '#c7c7c7' : '#707070')};
-
-    @media (max-width: 960px) {
-      mix-blend-mode: ${({ theme }) => (theme === 'light' ? 'unset' : 'difference')};
-    }
+    mix-blend-mode: ${({ theme }) => (theme === 'light' ? 'unset' : 'difference')};
   }
 `;
 

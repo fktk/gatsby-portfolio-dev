@@ -1,23 +1,13 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-  padding: 4rem 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  @media (max-width: 960px) {
-    flex-direction: column;
-  }
+  padding: 2rem 0;
 `;
 
 export const Details = styled.div`
-  flex: 1;
-  padding-right: 2rem;
-
   @media (max-width: 960px) {
-    padding-right: unset;
     width: 100%;
+    margin-bottom: 1rem;
   }
 
   h1 {
@@ -27,31 +17,17 @@ export const Details = styled.div`
 
     @media (max-width: 960px) {
       mix-blend-mode: ${({ theme }) => (theme === 'light' ? 'unset' : 'difference')};
+    }
   }
 
   p {
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.5rem;
     font-size: 12pt;
     font-weight: normal;
     line-height: 1.6;
     color: ${({ theme }) => (theme === 'dark' ? '#c7c7c7' : '#707070')};
     mix-blend-mode: ${({ theme }) => (theme === 'light' ? 'unset' : 'difference')};
-
-    @media (max-width: 960px) {
-      mix-blend-mode: ${({ theme }) => (theme === 'light' ? 'unset' : 'difference')};
-    }
   }
+
 `;
 
-export const Thumbnail = styled.div`
-  flex: 1;
-
-  @media (max-width: 960px) {
-    width: 100%;
-    margin-bottom: 2rem;
-  }
-
-  img {
-    width: 100%;
-  }
-`;

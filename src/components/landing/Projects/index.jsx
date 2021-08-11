@@ -4,7 +4,7 @@ import { ThemeContext } from 'providers/ThemeProvider';
 import { Container, Card, TitleWrap } from 'components/common';
 import Star from 'components/common/Icons/Star';
 import Fork from 'components/common/Icons/Fork';
-import { Wrapper, Grid, Item, Content, Stats, Languages } from './styles';
+import { TextWrapper, Wrapper, Grid, Item, Content, Stats, Languages } from './styles';
 
 export const Projects = () => {
   const { theme } = useContext(ThemeContext);
@@ -19,7 +19,7 @@ export const Projects = () => {
       {
         github {
           viewer {
-            repositories(first: 8, orderBy: { field: STARGAZERS, direction: DESC }) {
+            repositories(first: 4, orderBy: { field: STARGAZERS, direction: DESC }) {
               edges {
                 node {
                   id
@@ -45,8 +45,7 @@ export const Projects = () => {
     `
   );
   return (
-    <Wrapper as={Container} id="projects">
-      <h2>Projects</h2>
+    <Wrapper as={Container} id="projects" theme={theme}>
       <Grid>
         {edges.map(({ node }) => (
           <Item key={node.id} as="a" href={node.url} target="_blank" rel="noopener noreferrer" theme={theme}>
@@ -82,6 +81,28 @@ export const Projects = () => {
           </Item>
         ))}
       </Grid>
+      <TextWrapper>
+        <h1>Skills & Projects</h1>
+        <p>
+          使用言語はPythonかJavaScript。
+        </p>
+        <p>
+          <a href="http://tkhome.top/line">line-chart</a>は最近作ったソフトで、この亜種なら安価で作ります。
+        </p>
+        <p>
+          Pythonは、Numpy(数値計算)、Pillow(画像解析)、matplotlib(グラフ化)などをよく普段から使います。
+          pip installできるCLIアプリを仕立てられます。
+        </p>
+        <p>
+          JavaScriptでは、Pythonと同等の機能をGUIで操作できるようにします。GUIはReactや、HTML書いてDOM操作で実現します。
+        </p>
+        <p>
+          UIデザインは経験が足りないので、CSSフレームワーク(bootstrapなど)の力を借ります。
+        </p>
+        <p>
+          GitHubのリポジトリはまだ貧弱ですが、これから育てていきます。
+        </p>
+      </TextWrapper>
     </Wrapper>
   );
 };

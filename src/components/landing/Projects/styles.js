@@ -1,18 +1,50 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
+  display: flex;
   padding: 2rem 0;
+  p {
+    color: ${({ theme }) => (theme === 'light' ? '#707070' : '#c7c7c7')};
+    margin-bottom: 0.5rem;
+    font-size: 12pt;
+    font-weight: normal;
+    line-height: 1.6;
+  }
+  @media (max-width: 960px) {
+    flex-direction: column;
+  }
+  a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+
+		@media (max-width: 960px) {
+			color: ${({ theme }) => (theme === 'light' ? '#000' : '#fff')};
+		}
+  }
+
 `;
 
+export const TextWrapper = styled.div`
+  flex: 1;
+  @media (max-width: 960px) {
+    order: 1;
+  }
+`
+
 export const Grid = styled.div`
+  padding-right: 1rem;
+  padding-top: 2.5rem;
+  flex: 1;
   display: grid;
   align-items: center;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 8fr;
-  gap: 1.2rem 1.2rem;
+  gap: 1rem 1rem;
 
   @media (max-width: 960px) {
     grid-template-columns: repeat(2, 1fr);
+    order: 2
   }
 
   @media (max-width: 680px) {
@@ -37,7 +69,7 @@ export const Item = styled.div`
 
 export const Content = styled.div`
   padding: 1rem 0;
-  min-height: 160px;
+  min-height: 100px;
 `;
 
 export const Stats = styled.div`

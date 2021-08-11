@@ -38,6 +38,7 @@ module.exports = {
 				showSpinner: false,
 			},
 		},
+    /*
 		{
 			resolve: "gatsby-plugin-google-analytics",
 			options: {
@@ -45,6 +46,7 @@ module.exports = {
 				head: true,
 			},
 		},
+    */
 		{
 			resolve: "gatsby-plugin-manifest",
 			options: {

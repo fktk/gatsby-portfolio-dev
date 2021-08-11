@@ -9,9 +9,10 @@ const NavbarLinks = ({ desktop }) => {
 
   return (
     <Wrapper desktop={desktop} theme={theme}>
-      <AnchorLink href="#about">About</AnchorLink>
-      <AnchorLink href="#projects">Projects</AnchorLink>
-      <AnchorLink href="#contact">Contact</AnchorLink>
+      <AnchorLink href="#about-site">サイトについて</AnchorLink>
+      <AnchorLink href="#about">プロフィール</AnchorLink>
+      <AnchorLink href="#projects">スキル</AnchorLink>
+      <AnchorLink href="#contact">連絡先</AnchorLink>
       <ToggleTheme />
     </Wrapper>
   )
