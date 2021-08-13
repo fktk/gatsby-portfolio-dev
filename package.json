@@ -3,14 +3,13 @@
 	"private": true,
 	"description": "A simple portfolio for developers",
 	"version": "0.1.2",
-	"author": "Smakosh <ismai23l@hotmail.com>",
+	"author": "TK",
 	"dependencies": {
-		"axios": "^0.21.1",
 		"dotenv": "^10.0.0",
 		"formik": "^2.1.4",
 		"gatsby": "^3.6.1",
 		"gatsby-plugin-canonical-urls": "^3.6.0",
-		"gatsby-plugin-google-analytics": "^3.6.0",
+		"gatsby-plugin-google-gtag": "^3.11.0",
 		"gatsby-plugin-manifest": "^3.6.0",
 		"gatsby-plugin-nprogress": "^3.6.0",
 		"gatsby-plugin-offline": "^4.6.0",
@@ -24,7 +23,6 @@
 		"react-dom": "^17.0.2",
 		"react-google-recaptcha": "^2.1.0",
 		"react-helmet": "^6.1.0",
-		"react-hook-form": "^7.12.2",
 		"styled-components": "^5.3.0",
 		"yup": "^0.32.9"
 	},
@@ -36,7 +34,6 @@
 	"license": "MIT",
 	"scripts": {
 		"build": "gatsby build",
-		"start": "npx vercel dev && gatsby develop -o",
 		"reset": "rm -rf .cache/ public/",
 		"test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
 	},
@@ -47,10 +44,10 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git@github.com:smakosh/gatsby-portfolio-dev.git"
+		"url": "git@github.com:fktk/gatsby-portfolio-dev.git"
 	},
 	"bugs": {
-		"url": "https://github.com/smakosh/gatsby-portfolio-dev/issues"
+		"url": "https://github.com/fktk/gatsby-portfolio-dev/issues"
 	},
 	"resolutions": {
 		"graphql": "^15.4.0",

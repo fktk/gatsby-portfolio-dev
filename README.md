@@ -1,12 +1,11 @@
 # Portfolio for developers
 
-[Gatsby-theme-portfolio](https://github.com/smakosh/gatsby-theme-portfolio)をフォークして、ポートフォリオサイトを作りました。
-フォーク元様とは
+[Gatsby-theme-portfolio](https://github.com/smakosh/gatsby-theme-portfolio)をクローンして、ポートフォリオサイトを作りました。
 
 * デプロイ先が異なる(自前のサーバーにアップロード)
 * フォームにGoogle Formを使用
 
-という点で修正しているため、フォーク元様と同じ方法で立ち上げようとするとエラーが生じます。
+という点で修正しているため、クローン元と同じ方法で立ち上げようとするとエラーが生じます。
 
 ## Features
 
