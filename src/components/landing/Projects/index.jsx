@@ -19,7 +19,7 @@ export const Projects = () => {
       {
         github {
           viewer {
-            repositories(first: 4, orderBy: { field: STARGAZERS, direction: DESC }) {
+            repositories(first: 6, orderBy: { field: STARGAZERS, direction: DESC }) {
               edges {
                 node {
                   id
@@ -56,14 +56,6 @@ export const Projects = () => {
               </Content>
               <TitleWrap>
                 <Stats theme={theme}>
-                  <div>
-                    <Star color={theme === "light" ? "#000" : "#fff"} />
-                    <span>{node.stargazers.totalCount}</span>
-                  </div>
-                  <div>
-                    <Fork color={theme === "light" ? "#000" : "#fff"} />
-                    <span>{node.forkCount}</span>
-                  </div>
                 </Stats>
                 <Stats theme={theme}>
                   <Languages>
@@ -84,23 +76,37 @@ export const Projects = () => {
       <TextWrapper>
         <h1>Skills & Projects</h1>
         <p>
-          使用言語はPythonかJavaScript。
+          使用言語はPythonかJavaScript。以下大まかなプログラミング歴。
+        </p>
+        <dt>2016年頃</dt>
+        <dd>
+          AIブームに乗ってPythonを始める。
+          統計解析や機械学習を学びつつ、NumpyやPandasを使ったデータ処理を覚える。
+        </dd>
+        <dt>〜2018年</dt>
+        <dd>
+          サーバー(Linux)、エディタ(VIM)、git、SQLなどの基本的なITスキルを身につける。
+          ラズパイでLEDをチカチカさせたのもこの頃。
+        </dd>
+        <dt>〜2019年</dt>
+        <dd>
+          Pythonのデータ処理を共有するために、Webアプリ作成に着手する。
+          Flask、Djangoなどを覚える。
+        </dd>
+        <dt>〜2020年</dt>
+        <dd>
+          サーバーがなくてもプログラミングによる処理を共有するために、
+          JavaScriptでアプリ開発を始める。
+        </dd>
+        <dt>〜2021年</dt>
+        <dd>
+          UX向上のため、HTMLやCSSなど、フロントエンドの基本を復習し、Reactなどのフレームワークを覚える。
+        </dd>
+        <p>
+          専業の方と比べるとIT技術の成長は遅いですが、材料技術のドメイン知識は豊富です。
         </p>
         <p>
-          <a href="http://tkhome.top/line">line-chart</a>は最近作ったソフトで、この亜種なら安価で作ります。
-        </p>
-        <p>
-          Pythonは、Numpy(数値計算)、Pillow(画像解析)、matplotlib(グラフ化)などをよく普段から使います。
-          pip installできるCLIアプリを仕立てられます。
-        </p>
-        <p>
-          JavaScriptでは、Pythonと同等の機能をGUIで操作できるようにします。GUIはReactや、HTML書いてDOM操作で実現します。
-        </p>
-        <p>
-          UIデザインは経験が足りないので、CSSフレームワーク(bootstrapなど)の力を借ります。
-        </p>
-        <p>
-          GitHubのリポジトリはまだ貧弱ですが、これから育てていきます。
+          Githubはあまり活用していませんでしたが、今後はどんどんpushする予定。
         </p>
       </TextWrapper>
     </Wrapper>
